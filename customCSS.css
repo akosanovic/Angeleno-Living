@@ -1,0 +1,55 @@
+.image-block .image-linked:before { content: ""; width: 100%; height: 100%; position: absolute; z-index: 1; top: 0; left: 0; opacity: .6; background:; }
+
+.image-block .image-linked:hover:before { background: black; opacity: .6; transition: all .5s ease-in-out; }
+.Header--bottom.Header--overlay, .tweak-header-bottom-overlay-on-index-gallery .Header--bottom.Header--index-gallery {
+    background: #fff;
+}
+
+a.summary-thumbnail-container.sqs-gallery-image-container img {
+    transition: all .6s ease 0s; 
+}
+a.summary-thumbnail-container.sqs-gallery-image-container img:hover {
+    transform: scale(1.05,1.05); transition: all .6s ease 0s;
+}
+.summary-item.summary-item-record-type-image.sqs-gallery-design-autogrid-slide.summary-item-has-thumbnail:hover img {
+  transform: scale(1.05,1.05); transition: all .6s ease 0s;
+}
+
+.image-block-outer-wrapper.image-block-v2.design-layout-poster{
+    box-shadow: 0px 0px 15px #aaa;
+}
+.Index-gallery-item-inner {
+    box-shadow: 0px 0px 15px #aaa;
+}
+#footer { padding-bottom: 0;} .footer-inner { padding: 11px 0px; padding-bottom: 0;}
+.tweak-footer-layout-stacked .Footer-business-info, .tweak-footer-layout-stacked .Footer-business-hours, .tweak-footer-layout-stacked .Footer-nav, .tweak-footer-layout-stacked .Footer-blocks--middle {
+    padding: 0px 0;
+}
+.tweak-footer-layout-stacked .Footer-blocks--bottom {
+    padding-top: 0;
+}
+.sqs-block.newsletter-block.sqs-block-newsletter {
+    padding-bottom: 0;
+}
+.Footer .sqs-block.socialaccountlinks-v2-block {
+    padding-bottom: 0px!important;
+}
+.tweak-footer-layout-stacked .Footer-blocks--top {
+    padding-bottom: 10px;
+}
+
+.sqs-block-image .image-block-outer-wrapper.image-block-v2 {
+  overflow: hidden;
+}
+.sqs-block-image .image-block-outer-wrapper.image-block-v2 img {
+    transition: all .6s ease 0s; 
+}
+.sqs-block-image .image-block-outer-wrapper.image-block-v2:hover img {
+    transform: scale(1.05,1.05); transition: all .6s ease 0s; 
+}
+
+.Main-content {padding: 10px 17px;}
+.Site-inner--index header.Header.Header--bottom.Header--overlay {
+    padding-bottom: 10px;
+}
+#welcome .Index-page-content {padding-top:10px;}
