@@ -1,0 +1,42 @@
+<style>	
+/* Styling featured Blog Post */
+.summary-thumbnail.img-wrapper img {
+    width: 100%;
+    max-width: 100%;
+    left: 0!important;
+}
+@media only screen and (min-width: 680px) {
+	.summary-item-list-container.sqs-gallery-container .summary-content.sqs-gallery-meta-container {
+		margin-top: 10%;
+	}
+}
+</style>
+
+<script>
+    $(document).ready( function() {
+        
+
+        (function () {
+            // Featured post is listed in First Summary block and inside regular posts 
+            // Remove Featured post from Regular posts 
+            var summaryPosts = $('.summary-v2-block');
+            console.log('summaryPosts', summaryPosts)
+            var featuredPost = $(summaryPosts[0]).find('.summary-item');
+            var featuredLink = featuredPost.find('.summary-thumbnail-container').attr("href");
+
+
+            var regularPosts = $(summaryPosts[1]).find('.summary-item');
+            for (var i = 0; i < regularPosts.length; i++) {
+                var regularPost = $(regularPosts[i]);
+                
+                regularPostLink = regularPost.find('.summary-thumbnail-container').attr("href");
+                if (regularPostLink == featuredLink) {
+                    console.log('removed post ', regularPost)
+                    regularPost.remove();
+                }
+
+            }
+        })()
+
+    }) 
+</script>
